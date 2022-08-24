@@ -564,6 +564,7 @@ body {
   line-height: 23px;
   text-align: center;
   color: var(--text-color);
+  margin-top: 39px;
 }
 
 .contactsform {
@@ -571,20 +572,52 @@ body {
   flex-direction: column;
   font-weight: 400;
   font-size: 12px;
+  align-items: flex-start;
+  width: 448px;
+  margin: auto;
+}
+
+.input-container {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  display: flex;
   align-items: center;
+  padding-left: 15px;
+  margin: 4px 0 10px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
-.contactsform label {
-  padding-bottom: 10px;
+.contactssvg {
+  width: 15px;
+  height: 15px;
 }
 
-.contactsform label:nth-child(4) {
+.contactssvg:hover,
+.input-container:hover {
+  fill: var(--brand-color);
+  border: 1px solid var(--brand-color);
+}
+
+.contactsinput,
+.contactsinput:focus-visible,
+.contactsinput:hover {
+  border: none;
+  outline: none;
+  margin-left: 15px;
+  width: 100%;
+}
+
+.comments {
   display: flex;
   flex-direction: column;
   width: 448px;
+  margin-bottom: 20px;
 }
 
-.contactsform textarea {
+.comments textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 120px;
@@ -605,37 +638,6 @@ body {
 
 .contactsform textarea:hover {
   border: 1px solid var(--brand-color);
-}
-
-.input-container {
-  width: 448px;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  padding-left: 15px;
-  margin-top: 4px;
-  box-sizing: border-box;
-}
-
-.contactssvg {
-  width: 15px;
-  height: 15px;
-}
-
-.contactssvg:hover,
-.input-container:hover {
-  fill: var(--brand-color);
-  border: 1px solid var(--brand-color);
-}
-
-.contactsinput,
-.contactsinput:focus-visible,
-.contactsinput:hover {
-  border: none;
-  outline: none;
-  margin-left: 15px;
 }
 
 .checkbox {
@@ -659,5 +661,6 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
-  margin-bottom: 40px;
+  margin: 10px auto 40px;
+  cursor: pointer;
 }

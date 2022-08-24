@@ -44,34 +44,31 @@
         Deje sus datos, nos contactaremos con usted
       </h1>
       <form class="contactsform" name="contacts">
-        <label>
-          Nombre
-          <div class="input-container">
-            <svg class="contactssvg">
-              <use href="./images/icon.svg#nombre"></use>
-            </svg>
-            <input class="contactsinput" type="text" />
-          </div>
-        </label>
-        <label>
-          Teléfono
-          <div class="input-container">
-            <svg class="contactssvg">
-              <use href="./images/icon.svg#phone"></use>
-            </svg>
-            <input class="contactsinput" type="tel" />
-          </div>
-        </label>
-        <label>
-          E-mail
-          <div class="input-container">
-            <svg class="contactssvg">
-              <use href="./images/icon.svg#mail"></use>
-            </svg>
-            <input class="contactsinput" type="email" />
-          </div>
-        </label>
-        <label>
+        <label for="name"> Nombre </label>
+        <div class="input-container">
+          <svg class="contactssvg">
+            <use href="./images/icon.svg#nombre"></use>
+          </svg>
+          <input class="contactsinput" type="text" id="name" name="name" />
+        </div>
+
+        <label for="phone"> Teléfono </label>
+        <div class="input-container">
+          <svg class="contactssvg">
+            <use href="./images/icon.svg#phone"></use>
+          </svg>
+          <input class="contactsinput" type="tel" id="phone" name="phone" />
+        </div>
+
+        <label for="mail"> E-mail </label>
+        <div class="input-container">
+          <svg class="contactssvg">
+            <use href="./images/icon.svg#mail"></use>
+          </svg>
+          <input class="contactsinput" type="email" id="mail" name="mail" />
+        </div>
+
+        <label class="comments">
           Comentarios
           <textarea
             name="comentarios"
